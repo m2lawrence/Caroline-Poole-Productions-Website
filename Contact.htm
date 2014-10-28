@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+ body{ 
+	font-family: Verdana, Arial, sans-serif;
+	background-color: #33CCFF;
+	background-repeat:no-repeat;
+	background-attachment:fixed;}
+</style>
+ 
+ <title>Contact page</title>
+<marquee> <font color= "yellow"> Entertainment for all occassions, call for a quote today: 07737 852351 </font> </marquee> 
+ <link rel="stylesheet" type="text/css" href="contact1.css" /> 
+ <meta name="description" content="Gardens Store provides perfect lawns." />
+ <meta name="keywords" content="Caroline Poole, Entertainer, Performance Arts, Fire, Poi, Hula hooper, Stilt Walker, Norwich, Circus, Workshop, Facilator" />
+ 
+ <script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('MyClock').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+
+ </head>
+ 
+<!-- All html has to go in the Body, ie: Nav menu's. -->
+ 
+<body>
+ 
+<div id="Containerwhole">
+
+<div class="middle_box">
+<h1>Contact</h1>
+<div ul id="navbar">
+	<li><a href="index.htm" class="nav" accesskey="1" title="Home">Home</a></li>
+	<li><a href="About.htm" class="nav" accesskey="2" title="About">About</a></li>
+	<li><a href="Clients.htm" class="nav" accesskey="3" title="Clients">Clients</a></li>
+	<li><a href="Gallery.htm" class="nav" accesskey="10" title="Gallery">Gallery</a>
+		<li><a href="Acts.htm" class="nav" accesskey="4" title="Acts">Acts</a>
+		<ul>
+		<li><a href="Performances.htm" class="nav" accesskey="5" title="Performances">Performances</a></li>
+		<li><a href="HulaHooping.htm" class="nav" accesskey="6" title="Hula Hooping & Circus Workshops">Hula Hooping & Circus Workshops</a></li>
+		<li><a href="MeetAndGreetPerformances.htm" class="nav" accesskey="7" title="Meet & Greet Performances">Meet & Greet Performances</a></li>
+		<li><a href="WalkaboutEntertainment.htm" class="nav" accesskey="8" title="Walkabout Entertainment">Walkabout Entertainment</a></li>
+		<li><a href="ActRequirements.htm" class="nav" accesskey="9" title="Act Requirements">Act Requirements</a></li>
+		</ul>
+        	<li><a href="Contact.htm" class="nav" accesskey="13" title="Contact">Contact</a></li>
+</div ul>
+<!-- My clock. -->
+<body onload="startTime()">
+<div id="MyClock">
+</div>
+<!-- My clock. -->
+</div>
+
+<div id="logo">
+<img src="images/logo.png" />
+</div>
+
+
+<div id="MainText">
+ 
+<form name="form1" id="form1" method='post' action='contact.php' onsubmit="return validateForm();">
+<!-- Form Action gets php document. -->
+<table width="630" border="0" cellspacing="2" cellpadding="2">
+<tr><td>Please contact Caroline (without obligation) using this contact form:</td></tr>
+<tr><td><h2>Customer Information</h2></td></tr>	
+<tr><td>First Name <input name="firstname" type="text" id="firstname"/>Last Name <input name="lastname" type="text" id="lastname"/></td></tr>
+<tr><td>Address <input name="address" type="text" id="address" size="60"/></td></tr>
+<tr><td>City <input name="city" type="text" id="city"/>
+</select>Postcode <input name="postcode" type="text" id="postcode" size="12"/></td><td></tr>
+<tr><td></select>Home or mobile phone number <input name="phonenumber" type="number" id="phonenumber" size="20"/></td></tr> 
+<tr><td></select>Email Address <input name="email" type="number" id="email" size="64" /></td></tr>
+<tr><td>Question or general enquiry </td></tr>
+<tr><td><textarea name="QuestionMessage" id="QuestionMessage" cols="70" rows="5"></textarea></td></tr> 
+<tr><td></select>Event <input name="Event" type="number" id="Event" size="64" /></td></tr>
+<tr><td>Brief description of event </td></tr>
+<tr><td><textarea name="EventMessage" id="EventMessage" cols="70" rows="5"></textarea></td></tr> 
+
+<tr><td>Thanks for your enquiry. Caroline will get back to you within 48 hours to discuss availability and booking arrangements. </td></tr>
+<tr><td><input type="reset" name="reset" value="Reset"/>
+<input type="submit" name="submit" value="Submit"/></td>
+</tr>
+</table>
+</form>
+ 
+</div>
+</div>
+</body>
+</html>
